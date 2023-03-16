@@ -1,209 +1,285 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>First webpage</title>
-    <style>
-      * {
-        margin: 0px;
-        padding: 0px;
-      }
-      .fs, .fe, .be, .tt{
-        width: 100%;
-        height: 600px;
-        background: url("https://e0.pxfuel.com/wallpapers/149/259/desktop-wallpaper-web-development.jpg");
-        background-size: 100% 100%;
-        background-attachment: fixed;
-      }
-      .fs h1 {
-        margin: auto;
-        position: relative;
-        left: 500x;
-        top: 300px;
-        width: 250px;
-        height: 150px;
-        padding: 100px;
-        background-color: black;
-        color: white;
-        text-align: center;
-      }
-      .fe h2{
-        margin: auto;
-        position: relative;
-        left: 500x;
-        top: 300px;
-        width: 250px;
-        height: 100px;
-        padding: 10px;
-        background-color: white;
-        color: black;
-        text-align: center;
-        font-size: 30px;
-        font-family: Verdana;
-      }
-      .be h2 {
-        margin: auto;
-        position: relative;
-        left: 500x;
-        top: 300px;
-        width: 250px;
-        height: 100px;
-        padding: 10px;
-        background-color: white;
-        color: black;
-        text-align: center;
-        font-size: 30px;
-        font-family: Verdana;
-      }
-      .para1 {
-        padding: 50px;
-        background-color: black;
-        color: white;
-        font-size: 17px;
-      }
-      .para2 {
-        text-align: center;
-        padding: 50px;
-        font-size: 17px;
-        font-family: Verdana;
-        background-color: black;
-        color: white;
-      }
-      .tt h5{
-        margin: auto;
-        position: relative;
-        content : 100px;
-        top: 5px;
-        width: 200px;
-        height: 20px;
-        padding: 10px;
-        background-color: white;
-        color: black;
-        text-align: center;
-        font-size: 15px;
-        font-family: Verdana;
-      }
-    
-  .tt td{
-        border: 0px solid #d1ddf2;
-        border-collapse: collapse;
-        padding: 15px;
-        text-align: center;
-        color: white;
-    }
 
-    .tt h3{
-      font-size: medium;
-      color: white;
-      float: right;
-      margin: right 2px;
-    }
-  .tt img {
-            border-radius: 50%;
-            border: 1px solid blue;
-            float: right;  
-            position: relative;
-            cursor: pointer;
-           }
-     
-  
+        
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailornova</title>
+   
+    <style>
+
+      /*body*/
+      body {
+        background-size: cover;
+        padding: 0%;
+        border: 0%;
+        margin: 0%;
+        position: absolute;
+        margin-right: 0%;
+      }
+
+      /*nav*/
+      .head {
+        background-color: white;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        height: 30px;
+        top: 5px;
+      }
+      header * {
+        display: inline;
+        float: left;
+      }
+      header li {
+        margin: 20px;
+        float: right;
+      }
+      header li a {
+        color: rgb(22, 5, 5);
+        text-decoration: none;
+      }
+      .head img{
+        float: right;
+        position: relative;
+        align-content: flex-end;
+      }
+
+      /*screen1*/
+      .s1 table {
+        border: 0px;
+        align-items: flex-start;
+      }
+      .s1 table h1 {
+        color: rgba(203, 9, 99, 0.784);
+        font-size: 35pt;
+        font-weight: 100;
+      }
+      .s1 table p {
+        color: black;
+        font-weight: 100;
+        font-size: large;
+      }
+
+      /*container1*/
+      .container1{
+        background-color: rgba(203, 9, 99, 0.784);
+        width: 100%;
+        height: 300px;
+        padding-left: 5%;
+      }
+      .container1 h1{
+        color: white;
+        font-size: 20pt;
+        font-weight: 100;
+        font-family: Times New Roman;
+        padding: 1%;
+        padding-left: 4%;
+        padding-top: 2%;
+      }
+      .container1 table{
+        border: 0px;
+        color: white;
+        border-spacing: 10px;
+        padding: 1;
+      }
+      .container1 table tr{
+        column-gap: 8cap;
+      }
+      .container1 table td{
+        font-size: 15pt;
+      }
+      
+      /*circle*/
+      .circle {
+        background: rgba(203, 9, 99, 0.784);
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        display: flex;  
+      }
+      .circle p{
+        color: white;
+        font-size: 20pt;
+        text-align: center;
+        padding-left: 30pt;
+        padding-top: 30pt;
+      }
+      /*info*/
+      .info table{
+        border: 0px;
+        padding-left: 25%;
+        padding-right: 10%;
+        border-spacing: 50px;
+      }
+      .info table th{
+        font-size: 30pt;
+        font-weight: 100;
+      }
+      .info table tr{
+        font-size: large;
+      }
+
+      /*container2*/
+      .container2 {
+        background-color: rgba(203, 9, 99, 0.784);
+        height: 200px;
+        width: 100%;
+        padding: 1%;
+        padding-left: 4%;
+      }
+      .container2 form{
+        color: white;
+      }
+      .container2 h1{
+        font-weight: 100;
+      }
+
+      /*contact*/
+      .foot{
+        padding-left: 40pt;
+      }
+      .foot h1{
+        float: right;
+        font-size: 10pt;
+        padding-top: 0%;
+      }
+      .foot img{
+        float: right;
+        padding-top: 0%;
+        padding-bottom: 2%;
+        border-spacing: 5px;
+      }
+
     </style>
   </head>
+
   <body>
-    <div class = "fs">
-      <h1>FULL STACK WEB DEVELOPMENT</h1>
+    <!--header nav bar-->
+    <div class="head">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#"> Sign up </a></li>
+            <li><a href="#"> Sign up </a></li>
+            <li><a href="#"> Home </a></li>
+            <li><a href="https://tailornova.com/about"> About </a></li>
+            <li><a href="#"> Contact </a></li>
+            <li><a href="#"> Terms of use </a></li>
+            <li><a href="#"> Join Us </a></li>
+          </ul>
+         
+        </nav>
+        <img src="logo.svg" alt="logo" width="100px" height="80px" >
+      </header>
     </div>
-    <div class = "para1">
-      <p>
-        <h3>What is Full Stack Development ?</h3>
-        A full stack web developer is a person who can develop both client and server software.
+    <!--image nad para-->
+    <br /><br /><br /><br /><br />
+    <div class="s1">
+      <table>
+        <tr align="center">
+          <th>
+            <h1>THE WORLD'S SMARTEST <br />FASHION DESIGNER SOFTWARE</h1>
+            <p>
+              Tailornova is a patent-pending online fashion design software that
+              helps you create <br />unlimited designs easier and faster than
+              ever. Visualize your creations in 3D and <br />get custom-fitted
+              patterns in seconds.
+            </p>
+            <button>Design now</button>
+          </th>
+          <th rowspan="2">
+            <img src="https://tailornova.com/static/images/interface.gif" /></img>
+          </th>
+        </tr>
+      </table>
+    </div>
 
-        In addition to mastering HTML and CSS, he/she also knows how to:
-
-        Program a browser (like using JavaScript, jQuery, Angular, or Vue)
-        Program a server (like using PHP, ASP, Python, or Node)
-        Program a database (like using SQL, SQLite, or MongoDB)
-      </p>
+    <!--container1 with table-->
+    <div class="container1">
+      <h1>Who needs it?</h1>
+      <hr>
+      &emsp;&emsp;&emsp;&emsp;
+      <table>
+        <tr>
+          <td>
+            <ol type="1">
+              <li>DIY Sewing Community</li><br>
+              <li>Fashion Students</li><br>
+              <li>Fashion Merchandisers</li><br>
+            </ol>
+          </td>
+          <td>
+            <ol type="1" start="4"> 
+            <li>Clothing Boutiques</li><br>
+            <li>Tailors & Dressmakers</li><br>
+            <li>Indie Designers</li><br>
+          </td>
+          <td>
+            <ol type="1" start="7">
+            <li>Apparel Brands</li><br>
+            <li>Pattern Retailers</li><br>
+            <li>Specialty Apparel Manufacturers</li><br>
+            </ol>
+          </td>
+        </tr>
+      </table>
     </div>
 
-    <div class = "fe">
-      <h2>CLIENT SOFTWARE</h2>
-    </div>
-    <div class = "para2">
-      <h3>Front End</h3><br>
-      <p>
-        <a href = "https://www.w3schools.com/whatis/whatis_html.asp">HTML</a>
-        <a href = "https://www.w3schools.com/whatis/whatis_css.asp">CSS</a>
-        <a href = "https://www.w3schools.com/whatis/whatis_bootstrap.asp">BootStrap</a>
-        <a href = "https://www.w3schools.com/whatis/whatis_js.asp">JavaScript</a>
-        <a href = "https://www.w3schools.com/whatis/whatis_es5.asp">ES5</a>
-        <a href = "https://www.w3schools.com/whatis/whatis_htmldom.asp">HTML DOM</a>
-        <a href = "https://www.w3schools.com/whatis/whatis_json.asp">JSON</a>
-        <a href = "https://www.w3schools.com/whatis/whatis_xml.asp">XML</a>
-        <a href = "https://www.w3schools.com/jquery/default.asp">jQuery</a>
-        <a href = "https://www.w3schools.com/whatis/whatis_angularjs.asp">Angular</a>
-        <a href = "https://www.w3schools.com/whatis/whatis_react.asp">React</a>
-      </p>
-    </div>
+<br><br>
 
-    <div class = "be">
-      <h2>SERVER SOFTWARE</h2>
-    </div>
-    <div class = "para2">
-      <h3>Back End</h3><br>
-      <p>
-        <a href = "https://www.w3schools.com/php/default.asp">PHP</a>
-        <a href = "https://www.w3schools.com/asp/default.asp">ASP</a>
-        <a href = "https://www.w3schools.com/cs/index.php">C#</a>
-        <a href = "https://www.w3schools.com/java/default.asp">Java</a>
-        <a href = "https://www.w3schools.com/python/default.asp">Python</a>
-        <a href = "https://www.w3schools.com/nodejs/default.asp">Node.js</a>
-        <a href = "https://www.w3schools.com/go/index.php">Go</a>
-        <a href = "https://www.w3schools.com/whatis/whatis_sql.asp">SQL</a>
-        <a href = "https://www.w3schools.com/nodejs/nodejs_mongodb.asp">Mongo DB</a>
-        <a href = "https://www.w3schools.com/sass/default.php">Sass</a>
-      </p>
-    </div>
-    
-<div class = "tt">
-  <br><br><br><br><br>
-    <table id ="t">
-      <tr>
-          <th><h5>ADVANTAGES</h5></th>
-          <th><h5>DISADVANTAGES</h5></th>
-     </tr>
+<!--circle-->
+<center><div class="circle"><p>Important<br>Information</p></div></center>
+<br><br><br>
+<div class="info">
+  <table>
     <tr>
-        <td>You can master all the techniques involved in a development project</td>
-        <td>The solution chosen can be wrong for the project</td>
+      <th>21K</th>
+      <th>40+B</th>
+      <th>3SEC</th>
+      <th>$29/mo</th>
     </tr>
     <tr>
-       <td>You can make a prototype very rapidly</td>
-       <td>The solution chosen can be dependent on developer skills</td>
-      </tr>
-    <tr>
-        <td>You can provide help to all the team members</td>
-        <td>The solution can generate a key person risk</td>
+      <td>Pattern users</td>
+      <td>Design possibilities</td>
+      <td>Generate MTM patterns</td>
+      <td>Subscription price</td>
     </tr>
-    <tr>
-        <td>You can reduce the cost of the project</td>
-        <td>Being a full stack developer is increasingly complex</td>
-    </tr>
-    <tr>
-        <td>You can reduce the time used for team communication</td>
-    </tr>
-    <tr>
-        <td>You can switch between front and back end development based on requirements</td>
-    </tr>
-    <tr>
-        <td>You can better understand all aspects of new and upcoming technologies</td>
-    </tr>
-    </table>
-    
-      <h3>Connect with us</h3><br><br>
-      <img src="i.png" alt="instagram" height = "50px" width = "50px">
-      <img src="t.png" alt="facebook" height = "50px" width = "50px">
-      <img src="w.png" alt="twitter" height = "50px" width = "50px">
-      <img src="y.png" alt="youtube" height = "50px" width = "50px">
-    </div>
-    
+  </table>
+</div>
+
+<br><br>
+
+    <!--container2 with form-->
+    <div class="container2">
+      <center>
+          <h1>Join The Conversation & Get Exclusive Updates.</h1>
+          <h3>Subscribe today, and be the first in the know!</h3><br>
+          <form action="">
+              <input type="text" id="name" name="name" placeholder="Your name" required>&emsp;&emsp;
+              <input type="text" id="email" name="email" placeholder="Your Email" required>&emsp;&emsp;
+              <button>Subscribe now</button><br>
+              <h5>By clicking "Subscribe Now" I agree to TaylorNova's Terms of Service</h5>
+          </form>
+      </center>
+  </div>
+
+  <!--footer with contact-->
+  <div class="foot">
+    <h2>Contact Info:</h2>
+    <p>Tailornova<br>
+      1900 South Norfolk Street, <br>
+      Suite 350 San Mateo, <br>
+      CA 94403</p>
+      <h1>FOLLOW US ON</h1><br><br>
+      <a href="#"><img src="google_logo.png" alt="google_logo" width="30px" height="30px">&emsp;</a>
+      <a href="#"><img src="twitter_logo.png" alt="twitter_logo" width="30px" height="30px">&emsp;</a>
+      <a href="#"><img src="facebook_logo.png" alt="facebook_logo" width="30px" height="30px">&emsp;</a>  
+  </div>
+
   </body>
 </html>
+
+       
